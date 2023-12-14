@@ -38,11 +38,11 @@ body {
 #main-text {
     font-family: var(--font-family-main);
     color: whitesmoke;
-    font-size: 120px;
     z-index: 1;
     position: absolute;
-    top: 10px;
-    left: 600px;
+    top: 0;
+    left: 50px;
+    font-size: 40px;
 }
 .container::before {
     content: '';
@@ -74,13 +74,55 @@ body {
     text-align: center;
     margin-bottom: 20px;
     font-family: var(--font-family);
-    font-size: 54px;
+    font-size: 40px;
     margin: 0 auto;
 }
 .descr {
     margin: 20px auto;
     text-align: start;
     font-family: var(--font-family);
-    font-size: 32px;
+    font-size: 18px;
     max-width: 1000px;
+}
+/*---------------------------------------ADAPTIVE-----------------------*/
+
+@media screen and (min-width: 375px) {
+    #main-text {
+        left: 100px;
+    }
+}
+@media screen and (min-width: 475px) {
+    #main-text {
+        left: 150px;
+    }
+}
+@media screen and (min-width: 600px) {
+    #main-text {
+        left: 200px;
+        font-size: 65px;
+    }
+    .descr {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #main-text {
+    left: 250px;
+    font-size: 75px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #main-text {
+        font-size: 120px;
+        top: 10px;
+        left: 600px;
+    }
+
+    .text {
+        font-size: 54px;
+    }
+
+    .descr {
+        font-size: 32px;
+    }
 }
