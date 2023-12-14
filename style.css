@@ -82,7 +82,6 @@ body {
     text-align: start;
     font-family: var(--font-family);
     font-size: 18px;
-    max-width: 1000px;
 }
 /*---------------------------------------ADAPTIVE-----------------------*/
 
@@ -117,11 +116,9 @@ body {
         top: 10px;
         left: 600px;
     }
-
     .text {
         font-size: 54px;
     }
-
     .descr {
         font-size: 32px;
     }
